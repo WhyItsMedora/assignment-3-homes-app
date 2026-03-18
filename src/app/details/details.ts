@@ -17,7 +17,7 @@ export class Details {
   housingLocation: HousingLocationInfo | undefined;
   
   constructor() {
-  this.housingLocationId = Number(this.route.snapshot.params['id']);
-  this.housingLocation = this.housingService.getHousingLocationById(this.housingLocationId);
+    this.housingLocationId = Number(this.route.snapshot.params['id']);
+    this.housingLocation = this.housingService.getHousingLocationById(this.housingLocationId);
   }
 }
